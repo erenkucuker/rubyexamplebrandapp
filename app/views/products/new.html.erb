@@ -1,0 +1,33 @@
+
+
+<div class="form-container">
+  <div class="content-title">
+    <h1>NEW PRODUCT</h1>
+  </div>
+
+<%= simple_form_for @product do |form| %>
+
+  <%= form.error_notification %>
+
+  <%= form.input :name %>
+  <%= form.input :description %>
+
+  <div class="box">
+<label for="brand">Brand</label>
+  <%= form.collection_select(:brand_id, Brand.all, :id, :name) %>
+  </div>
+
+
+<div class="form-btn-group"> 
+  <%= form.button :submit, class: "btn-send" do %>
+  
+  <% end %>
+
+  <%= link_to url_for(:back), class: "btn-form", :method => "get" do %>
+    Back
+  <% end %>
+</div>
+
+<% end %>
+
+</div>

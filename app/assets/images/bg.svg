@@ -1,0 +1,38 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	xml:space="preserve">
+	<g id="Layer_3">
+		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-422.2036" y1="144.0213" x2="2261.033"
+			y2="144.0213">
+			<stop offset="0" style="stop-color: #00AEEF" />
+			<stop offset="1" style="stop-color: #2E3192" />
+		</linearGradient>
+		<path opacity="0.5" fill="url(#SVGID_1_)"
+			d="M -401.2 26.9 c 0 0 173.3 111.2 438.8 0 c 154.1 -64.5 276.1 -60.9 421 12.9 c 109.5 55.8 243.9 91.3 368.2 91.8 c 104.4 0.5 205.7 -20.7 295.2 -72.9 c 310.2 -181 486.3 0 486.3 0 s 310.2 250.9 673.6 -19.1 V -236.7 H -400.2 L -401.2 26.9 z">
+			<animateTransform attributeName="transform" attributeType="XML" type="translate" dur="25"
+				values="150,0;-150,0;150,0;" repeatCount="indefinite" />
+		</path>
+	</g>
+	<g id="Layer_2">
+		<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="-420.5411" y1="112.5312" x2="2257.8955"
+			y2="112.5312">
+			<stop offset="0" style="stop-color: #262262" />
+			<stop offset="1" style="stop-color: #00AEEF" />
+		</linearGradient>
+		<path opacity="0.5" fill="url(#SVGID_2_)"
+			d="M -104.5 -13.3 c 0 0 173 92.2 438 0 c 101.2 -35.2 208.5 -48.9 314.2 -24.4 c 73.4 17.1 141.1 50.1 213.3 71 c 179 52 384.4 62.4 555 -20.3 c 309.7 -150.2 485.5 0 485.5 0 s 309.7 208.2 672.4 -15.8 V -232 h -2677.4 L -104.5 -13.3 z">
+			<animateTransform attributeName="transform" attributeType="XML" type="translate" dur="20"
+				values="150,0;-150,0;150,0;" repeatCount="indefinite" />
+		</path>
+	</g>
+	<g id="Layer_1">
+		<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="-427.0215" y1="95.573" x2="2261.0151" y2="95.573">
+			<stop offset="0" style="stop-color: #00AEEF" />
+			<stop offset="1" style="stop-color: #2B3990" />
+		</linearGradient>
+		<path opacity="0.5" fill="url(#SVGID_3_)"
+			d="M -520 10.7 c 0 0 173.6 92.2 439.6 0 c 196.8 -68.2 341.5 -5.2 528.8 46.8 c 181 50.3 385.1 62.9 557.6 -20.4 c 310.8 -150.2 487.2 0 487.2 0 s 310.8 208.2 674.8 -15.8 V -208 H -519 L -520 10.7 z">
+			<animateTransform attributeName="transform" attributeType="XML" type="translate" dur="15"
+				values="150,0;-150,0;150,0;" repeatCount="indefinite" />
+		</path>
+	</g>
+</svg>

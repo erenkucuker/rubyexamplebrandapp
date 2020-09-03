@@ -1,0 +1,39 @@
+<div class="card-container">
+    <%= link_to new_brand_path, class: "button-create" do %>
+    CREATE A NEW BRAND
+    <% end %>
+   
+    <% @brands.each do |brand| %>
+      <div class="card">
+        
+          <%= image_tag brand.image, class: "image-brand" rescue image_tag "placeholder.png", class: "image-brand" %>
+        
+        <h1 class="brand-name">Name <%= brand.name %></h1>
+        <p class="brand-description">
+        Description 
+        <%= brand.description %>
+        </p>
+        <div class="buttons">
+        <a class="show-button button-menu hvr-grow">
+        <i class="fa fa-eye" aria-hidden="true"></i>
+        </a>
+  
+
+          <%= link_to edit_brand_path(brand.id), class: "edit-button button-menu hvr-grow" do %>
+        <i class="fa fa-pencil" aria-hidden="true"></i>
+        
+       <% end %>
+        
+        
+        
+
+       <%= link_to brand_path(brand), method: :delete, class: "delete-button button-menu hvr-grow" do %>
+        <i class="fa fa-trash" aria-hidden="true"></i>
+        
+       <% end %>
+       
+        </div>
+  
+      </div>
+    <% end %>
+</div>

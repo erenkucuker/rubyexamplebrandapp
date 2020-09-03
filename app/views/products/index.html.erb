@@ -1,0 +1,38 @@
+<div class="card-container">
+    <%= link_to new_product_path, class: "button-create" do %>
+    CREATE A NEW PRODUCT
+    <% end %>
+    <% @products.each do |product| %>
+      <div class="card">
+        
+          <%= image_tag brand.image, class: "image-brand" rescue image_tag "placeholder.png", class: "image-brand" %>
+        
+        <h1 class="brand-name">Name <%= product.brand.name %> <%= product.name %></h1>
+        <p class="brand-description">
+        Description 
+        <%= product.description %>
+        </p>
+        <div class="buttons">
+        <a class="show-button button-menu hvr-grow">
+        <i class="fa fa-eye" aria-hidden="true"></i>
+        </a>
+  
+
+          <%= link_to edit_product_path(product.id), class: "edit-button button-menu hvr-grow" do %>
+        <i class="fa fa-pencil" aria-hidden="true"></i>
+        
+       <% end %>
+        
+        
+        
+
+       <%= link_to product_path(product.id), method: :delete, class: "delete-button button-menu hvr-grow" do %>
+        <i class="fa fa-trash" aria-hidden="true"></i>
+        
+       <% end %>
+       
+        </div>
+  
+      </div>
+    <% end %>
+</div>

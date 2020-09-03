@@ -1,0 +1,29 @@
+
+
+<div class="form-container">
+  <div class="title">
+    <h1>EDIT BRAND</h1>
+  </div>
+
+<%= simple_form_for @brand do |form| %>
+
+  <%= form.error_notification %>
+
+  <%= form.input :name %>
+  <%= form.input :description %>
+  <%= form.input :image, as: :file %>
+
+
+
+  <div class="form-btn-group"> 
+  <%= form.button :submit, class: "btn-send" do %>
+  
+  <% end %>
+
+  <%= link_to url_for(:back), class: "btn-form", :method => "get" do %>
+    Back
+  <% end %>
+</div>
+<% end %>
+
+</div>

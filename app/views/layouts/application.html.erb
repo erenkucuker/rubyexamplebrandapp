@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Marka ve Ürün Dashboard</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", media: "all", 'data-turbolinks-track': "reload" %>
+    <%= stylesheet_link_tag "hover-min" %>
+    <%= stylesheet_link_tag "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" %>
+    <%= stylesheet_link_tag "https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap" %>
+   
+    <%= javascript_pack_tag "application", 'data-turbolinks-track': "reload" %>
+    
+    <%= javascript_include_tag "https://kit.fontawesome.com/0588435aa9.js", :defer => "defer" %>
+    
+  </head>
+
+  <body>
+  <div class="container">
+  <div class="sidebar">
+      <div class="sidebar-container">
+      <div class="brand-container">
+        <%= link_to brands_path do %>
+          <%= image_tag "demo.png", :class => "demo-logo" %>
+          <h3 class="sidebar-expanded logo-text">MARKAURUNAPP</h3>
+        <% end %>
+      </div>
+      <ul class="sidebar-item-container">
+        <li class="sidebar-item hvr-icon-bob">
+        <i class="fas fa-clipboard-list hvr-icon"></i>
+        <%= link_to brands_path, :class => "sidebar-expanded" do %>
+          
+          BRAND
+        <% end %>
+        </li>
+        <li class="sidebar-item hvr-icon-bob">
+        <i class="fas fa-box-open hvr-icon"></i>
+                  <%= link_to products_path, :class => "sidebar-expanded" do %>
+          
+          PRODUCTS
+        <% end %>
+        </li>
+        <li class="sidebar-item hvr-icon-bob">
+        <i class="fas fa-parachute-box hvr-icon"></i>
+          <a class="sidebar-expanded" href="">EXAMPLE</a>
+        </li>
+      </ul>
+      <div class="sidebar-help">
+        <i class="fa fa-question"></i>
+        <a class="sidebar-expanded" href="">Help Center</a>
+      </div>
+    </div>
+  </div>
+  <div class="item-container">
+<h1 class="page-title"><%= @breadcrumb %></h1>
+<%= yield %>
+  </div>
+</div>
+
+    
+  </body>
+</html>
